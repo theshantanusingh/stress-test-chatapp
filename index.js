@@ -75,7 +75,7 @@ wss.on('connection', function connection(ws) {
 
   ws.on('message', function incoming(message) {
     if (ws.partner) {
-      ws.partner.send(JSON.stringify({ type: 'chat', msg: message }));
+      ws.partner.send(JSON.stringify({ type: 'chat', msg: message.toString() }));
       logEvent('Message Relay', `Message passed to partner`);
     }
   });

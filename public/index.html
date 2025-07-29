@@ -79,6 +79,20 @@
       }
     };
 
+    msgInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+      const message = msgInput.value.trim();
+      if (message) {
+        ws.send(message);
+        logMessage('You', message);
+        msgInput.value = '';
+      }
+    }
+  }
+});
+
+
     document.getElementById('disconnect').onclick = () => {
       if (ws) ws.close();
     };
