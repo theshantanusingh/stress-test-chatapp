@@ -22,7 +22,9 @@
     "ws": "^8.18.3"
   },
   "directories": {
-    "test": "test"
+    "test": "test",
+    "logs": "logs",
+    "public": "public"
   },
   "devDependencies": {}
 }
