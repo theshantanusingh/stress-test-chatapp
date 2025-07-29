@@ -22,9 +22,15 @@
     "ws": "^8.18.3"
   },
   "directories": {
-    "test": "test",
-    "logs": "logs",
-    "public": "public"
+    "test": "test"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theshantanusingh/stress-test-chatapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theshantanusingh/stress-test-chatapp/issues"
+  },
+  "homepage": "https://github.com/theshantanusingh/stress-test-chatapp#readme"
 }
